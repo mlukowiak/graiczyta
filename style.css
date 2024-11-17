@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+}
+
+.terminal {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    white-space: nowrap;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .terminal {
+        font-size: 0.8rem;
+    }
+}
