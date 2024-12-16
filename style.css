@@ -38,9 +38,40 @@ body {
 }
 
 .name {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.description {
-    margin-top: -10px;
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.3);
+    color: #333;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 500px) {
+    .social-links {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
